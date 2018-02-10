@@ -1,0 +1,65 @@
+Hello this is the text file with the same data as in the pdf file..
+
+
+Test file 1
+1. Given the
+2. challenging fiscal environment,
+3. identifying potential opportunities for efficiencies and
+4. cost savings in commissaries and exchanges can help DOD
+5. manage programs in the face of potential budget reductions.
+6. Although DOD’s report states that DOD will not be able to achieve
+7. budget neutrality, the report lacks additional detailed information a
+8. bout potential trade-offs,
+9. constraints and limitations
+10. to achieving budget
+11. neutrality
+12. . In addition, DOD stated
+13. in its May 2016 report to
+14. Congress that it can achieve an estimated $2 billion
+15. in cost savings over a 5-year period, but the department
+16. did not provide information on its steps to achieve the
+17. cost savings. In addition, DOD’s
+18. report does not fully address all of the
+19. mandated reporting elements,
+20. instead only partially addressing four of the
+21. seven elements. DOD does not outline specific
+22. metrics, as required for pilot
+23. programs authorized under
+24. section 651, to maintain
+25. high levels of customer satisfaction,
+26. quality of products,
+27. and patron savings
+28. within the commissaries and
+29. exchanges. As DOD moves
+30. forward with pilot programs,
+31. DOD will need specific
+32. metrics to meet the
+33. requirements of section 651.
+34. However, the report
+35. does not provide
+36. additional information
+37. for decision makers in
+38. Congress to evaluate how DOD
+39. will achieve its estimated reductions
+40. in 5 years. In the absence
+41. of detailed information
+42. to support its conclusion
+43. that it cannot achieve
+44. budget neutrality,
+45. the department lacks
+46. assurance that its cost
+47. savings target is an accurate
+48. and achievable estimate,
+49. as well as a plan
+50. with a methodology,
+51. cost estimates and
+52. specific time frames,
+53. decisionmakers
+54. cannot evaluate
+55. whether
+56. the implementation
+57. of DOD’s efforts are
+58. effective in achieving
+59. its estimated cost
+60. savings without
+61. impacting patrons.

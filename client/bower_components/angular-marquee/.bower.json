@@ -1,0 +1,36 @@
+{
+  "name": "angular-marquee",
+  "authors": [
+    "Nam Tran <nam.trankhanh.vn@gmail.com>"
+  ],
+  "description": "",
+  "main": "src/marquee.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/davidtran/angular-marquee",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.9",
+    "jquery": "~2.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.9"
+  },
+  "_release": "6aa5f1f7b6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6aa5f1f7b60ed0fb813eb75d16dedf5de1983335"
+  },
+  "_source": "https://github.com/davidtran/angular-marquee.git",
+  "_target": "*",
+  "_originalSource": "angular-marquee",
+  "_direct": true
+}

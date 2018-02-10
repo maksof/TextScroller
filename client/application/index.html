@@ -1,0 +1,85 @@
+<html lang="en" ng-app="textScrollApp" class="no-js">
+<head>
+<title>Pdf Text Scroll</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Angular Files -->
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-ui-router.min.js"></script>
+<script src="assets/js/angular-local-storage.min.js"></script>
+<script src="assets/js/angular-ui-bootstrap.min.js"></script>
+<script src="assets/js/ng-file-upload.min.js"></script>
+<script src="assets/js/marque.js"></script>
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<!-- Bootstrap Files -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+    $('#showPdfIcon').hide();
+    $('#showTextIcon').hide();
+});
+
+function fileChangeEvent(event) {
+  
+  if (event.files[0] == undefined) {
+    $('#hideSVG').show(); 
+    $('#showPdfIcon').hide();
+    $('#showTextIcon').hide();
+    $('#uploadedFileName').text('Choose a file or drag it here');
+  } else {
+    var fileName = event.files[0].name;
+    var type = event.files[0].type;
+    $('#uploadedFileName').text(fileName);
+
+    if (type == 'application/pdf') {
+
+      $('#showPdfIcon').show();
+      $('#showTextIcon').hide();
+      $('#hideSVG').hide();
+    } else if (type == 'text/plain') {
+
+      $('#showPdfIcon').hide();
+      $('#showTextIcon').show();
+      $('#hideSVG').hide();
+    }    
+  }
+}
+
+function resumeScrolling() {
+
+  var marqueSpeed = document.getElementById('hiddenSpeedVale');
+  var currentSpeed = marqueSpeed.value;
+  mqRotate(mqr, currentSpeed);
+}
+
+</script>
+</head>
+<body ng-controller="mainCtrl">	
+<input type="hidden" id="hiddenSpeedVale" name="hiddenSpeedVale" value="20" />
+<div ng-view class="ui-view"></div>
+
+<script src="/version"></script> 
+<script>
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/assets/css/style.css';
+      document.head.appendChild(link);
+
+document.write("<script src='app.js?version="+ version + "'><\/script>");
+document.write("<script src='controllers/module.js?version="+ version + "'><\/script>");
+document.write("<script src='controllers/main-ctrl.js?version="+ version + "'><\/script>");
+document.write("<script src='controllers/upload-files-ctrl.js?version="+ version + "'><\/script>");
+document.write("<script src='controllers/refresh-ctrl.js?version="+ version + "'><\/script>");
+document.write("<script src='service/api-service.js?version="+ version + "'><\/script>");
+</script>
+</body>
+</html>

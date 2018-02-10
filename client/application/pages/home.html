@@ -1,0 +1,129 @@
+<div id="Test" class="scroll-left">
+    {{scrollText}}
+</div>
+<div id="m1" class="marquee" ng-if="scrollText !=''" ng-show="!isFileEndScrolling">
+	<span>{{scrollText}}</span>
+</div>
+<div class="marquee restartMessageHeight" ng-show="isFileEndScrolling">
+	<span class="restartMessage">Scolling complete. Press Restart button to scroll again!!</span>
+</div>
+<div class="scrollControl" ng-show="loading">
+	<p class="fileParagraph">Selected File:</p>
+	<div ng-if="selectedFile != ''" ng-show="loading">
+		<div ng-show="!showEmptyFileError">
+			<img src="assets/images/loading.gif" class="iconImg">
+			<p class="fileParagraph">&nbsp;Loading your file</p><br>
+		</div>
+		<div ng-show="showEmptyFileError">
+			<span class="glyphicon glyphicon-warning-sign warning"></span>
+			<p class="fileParagraph">&nbsp;File is an image or an empty file, Cannot scroll text!</p>
+		</div>
+		
+	</div>
+</div>
+<div class="scrollControl" ng-show="showBookmarkMessage" ng-class="showBookmarkNgClass">
+	<p class="bookmarkSuccess"><span class="glyphicon glyphicon-ok ok"></span>{{bookmarkMessage}}</p>
+</div>
+<div class="scrollControl" ng-if="selectedFile != ''" ng-hide="loading">
+	<p class="fileParagraph" >Selected File:</p>
+	<div>
+		<div>
+			<span ng-click="closeReading()" class="glyphicon glyphicon-remove deletePdf crossClass" title="Close Reading"></span>
+			
+			<div class="col-sm-12 col-md-12 col-lg-12" style="display:flex">
+				<div class="col-sm-3 col-md-3 col-lg-3" style="display: flex;border-right: 2px solid #ffffff;">
+					<div>
+						<img src="assets/images/pdf.png" class="pdfFileIcon" ng-show="showPdfImage">
+						<img src="assets/images/txt.png" class="textFileIcon" ng-show="showTxtImage">
+					</div>
+					<div class="fileInfoMargin">
+						<p class="openFileFont">File Name: {{showSelectedFileName()}}</p>
+						<p class="openFileFont">{{selectedFile.fileType}}</p>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3" style="border-right: 2px solid #ffffff;">
+					<div>
+						<p class="largeFont">{{currentScrollingSpeedWPM}} WPM</p>
+					</div>
+					<div class="controlsDiv">
+						<button title="Slow" class="glyphicon glyphicon-backward backward transparentSped" ng-click="changeSpeed('slow')" ng-disabled="disableSlowButton"></button>
+						<span title="Resume" class="glyphicon glyphicon-play play" ng-click="resumeScrolling()"></span>
+						<span title="Restart" class="glyphicon glyphicon-repeat restart" ng-click="restartScrolling()"></span>
+						<span title="Stop" class="glyphicon glyphicon-stop stop" ng-click="stopScrolling()"></span>
+						<button title="Fast" class="glyphicon glyphicon-forward forward transparentSped" ng-disabled="disableFastButton" ng-click="changeSpeed('fast')"></button>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3" style="border-right: 2px solid #ffffff;">
+					<div>
+						<p class="openFileFont">Reading Page Number:</p>
+						<p class="largeFont">Page: {{currentReadingPage}} / {{totalPages}}</p>
+					</div>
+					<div>
+						<button ng-click="changePage('prev')" ng-disabled="disablePrevButton" >Prev</button>
+						<button ng-click="changePage('next')" ng-disabled="disableNextButton" >Next</button>
+						<span class="seprator"></span>
+						<span style="color:#ffffff"> &nbsp;Jump To </span>
+						 <input ng-keyup="checkPage()" type="number" style="width: 18%;" min="1" max="{{totalPages}}" id="pageNumber" ng-model="moveToPage.pageNumber" />
+						<button ng-disabled="totalPages == 1" ng-click="changePage('move')">Go</button>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<div>
+						<span title="Bookmark this page" class="glyphicon glyphicon-star bookmarkNow" ng-click="bookmarkPage()"></span>
+						<p class="openFileFont topPadding">Last Bookmarks:</p>
+						<span ng-repeat="b in bookmarks">
+							<a href="#" data-title="Page No: {{b}}">
+								<span class="glyphicon glyphicon-star lastBookmarks" ng-click="changePage(b)"><span class="glyphicon glyphicon-remove removeBookmark" title="Remove Bookmark" ng-click="removeBookmark(b)"></span></span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="controlsDiv" style="margin-bottom: 20px;">
+				<span class="glyphicon glyphicon-backaward"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="uploadNewFileBtnDiv" ng-if="selectedFile == ''">
+	<p class="fileParagraph">Upload File</p>
+	<button ng-click="saveUploadedFile()" class="uploadFileBtn saveUploadFileBtn">Save</button>
+	<p class="errorMessage" ng-if="showSelectFileError == true">Please Select File First</p>
+	<p class="errorMessage" ng-if="showFileFormatsError == true">Only Pdf and Txt file are acceptable</p>
+	<p class="errorMessage" ng-if="showAlreadyExistFileError == true">A file with name {{uploadedFile.name}} alredy exist!</p>	
+	<div class="box has-advanced-upload">
+		<input type="file" onchange="fileChangeEvent(this); angular.element(this).scope().fileChangeEvent(this)" class="choseFileInput" />
+		<div class="box__input">
+			<center><img src="assets/images/pdf.png" class="pdfFileIcon choseFileMargin hideIcon" id="showPdfIcon"></center>
+			<center><img src="assets/images/txt.png" class="textFileIcon choseFileMargin hideIcon" id="showTextIcon"></center>
+			<svg id="hideSVG" class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"></path></svg>
+			<center><p class="choseFileOrDrag" id="uploadedFileName"><strong>Choose a file </strong> or drag it here</p></center>			
+		</div>
+	</div>
+</div>
+<div class="fileSelect scrollableTable" ng-class="(selectedFile == '') ? 'beforeScrollHeight':'afterScrollHeight' ">
+	<table class="tableTab">
+	  <tr class="tableInsideContent" ng-if="filesArray.length > 0">
+	    <th>File Name</th>
+	    <th>File Type</th>
+	    <th>Uploaded Date</th>
+	    <th>File Size (KB)</th>
+	  </tr>
+	  <tr ng-repeat="file in filesArray" class="readFile tableInsideContent" ng-if="filesArray.length > 0">
+		<td>
+			<div class="deleteDiv" ng-click="readFile(file)">
+				<span class="tableCellMargin">{{file.fileName}}</span>
+			</div>
+			
+		    <span ng-click="deleteFile(file)" class="glyphicon glyphicon-trash deletePdf" title="Delete File"></span>
+		</td>
+	    <td ng-click="readFile(file)"><span class="tableCellMargin">{{file.fileType}}</span></td>
+	    <td ng-click="readFile(file)"><span class="tableCellMargin">{{file.uploadedDate | date:'MM/dd/yyyy hh:mm:ss a'}}</span></td>
+	    <td ng-click="readFile(file)"><span class="tableCellMargin">{{roundOffFileSizeToKB(file.size)}} </span></td>
+	  </tr>
+	  <tr class="tableInsideContent" >
+	  	<center><p ng-if="filesArray.length == 0">No File Present in the directory. Please upload file to read.</p></center>
+	  </tr>
+	</table>
+</div>

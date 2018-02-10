@@ -1,0 +1,9 @@
+{
+  "name": "textScrollApp",
+  "description": "Growl Messaging App",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "amdefine": "=0.1.0"
+  }
+}

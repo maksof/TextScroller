@@ -1,0 +1,141 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'angular-marquee' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\package.json
+5 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\angular-file-upload\package.json
+6 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\body-parser\package.json
+7 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\compression\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\connect-mongo\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\connect-multiparty\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\cookie-parser\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\crypto\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\docxtemplater\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\express\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\express-session\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\formidable\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\git-rev\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\jszip\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\mocha\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\mongodb\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\mongoose\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\node-msoffice-pdf\package.json
+22 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\nodeunit\package.json
+23 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\nodeunit-express\package.json
+24 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\nodeunit-httpclient\package.json
+25 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\noflo\package.json
+26 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\open\package.json
+27 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\pdf2json\package.json
+28 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\pdfjs-dist\package.json
+29 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\should\package.json
+30 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\supertest\package.json
+31 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\testosterone\package.json
+32 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\uglify-js\package.json
+33 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\uglifycss\package.json
+34 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\upgrade\package.json
+35 verbose installManyTop reading scoped package data from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\node_modules\winston\package.json
+36 info package.json cookie-parser@1.3.4 No license field.
+37 info package.json angular-file-upload@2.4.1 No license field.
+38 info package.json formidable@1.0.17 No license field.
+39 info package.json crypto@0.0.3 crypto is also the name of a node core module.
+40 info package.json crypto@0.0.3 No license field.
+41 info package.json connect-mongo@0.8.0 No license field.
+42 info package.json mocha@2.2.4 No license field.
+43 info package.json mongodb@2.0.27 license should be a valid SPDX license expression
+44 info package.json nodeunit@0.9.1 No license field.
+45 info package.json pdf2json@1.1.7 No license field.
+46 info package.json nodeunit-express@0.0.5 No license field.
+47 info package.json noflo@0.4.5 No license field.
+48 info package.json nodeunit-httpclient@0.2.1 No license field.
+49 info package.json testosterone@1.3.1 No license field.
+50 info package.json winston@1.0.0 No license field.
+51 info package.json uglify-js@2.4.20 license should be a valid SPDX license expression
+52 verbose readDependencies loading dependencies from C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server\package.json
+53 silly cache add args [ 'angular-marquee', null ]
+54 verbose cache add spec angular-marquee
+55 silly cache add parsed spec Result {
+55 silly cache add   raw: 'angular-marquee',
+55 silly cache add   scope: null,
+55 silly cache add   name: 'angular-marquee',
+55 silly cache add   rawSpec: '',
+55 silly cache add   spec: 'latest',
+55 silly cache add   type: 'tag' }
+56 silly addNamed angular-marquee@latest
+57 verbose addNamed "latest" is being treated as a dist-tag for angular-marquee
+58 info addNameTag [ 'angular-marquee', 'latest' ]
+59 silly mapToRegistry name angular-marquee
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry data Result {
+62 silly mapToRegistry   raw: 'angular-marquee',
+62 silly mapToRegistry   scope: null,
+62 silly mapToRegistry   name: 'angular-marquee',
+62 silly mapToRegistry   rawSpec: '',
+62 silly mapToRegistry   spec: 'latest',
+62 silly mapToRegistry   type: 'tag' }
+63 silly mapToRegistry uri https://registry.npmjs.org/angular-marquee
+64 verbose addNameTag registry:https://registry.npmjs.org/angular-marquee not in flight; fetching
+65 verbose request uri https://registry.npmjs.org/angular-marquee
+66 verbose request no auth needed
+67 info attempt registry request try #1 at 12:17:06 AM
+68 verbose request id e525b755679972b9
+69 http request GET https://registry.npmjs.org/angular-marquee
+70 http 404 https://registry.npmjs.org/angular-marquee
+71 verbose headers { 'content-type': 'application/json',
+71 verbose headers   'cache-control': 'max-age=0',
+71 verbose headers   'content-length': '2',
+71 verbose headers   'accept-ranges': 'bytes',
+71 verbose headers   date: 'Sat, 07 Jan 2017 19:17:25 GMT',
+71 verbose headers   via: '1.1 varnish',
+71 verbose headers   age: '0',
+71 verbose headers   connection: 'keep-alive',
+71 verbose headers   'x-served-by': 'cache-cdg8733-CDG',
+71 verbose headers   'x-cache': 'MISS',
+71 verbose headers   'x-cache-hits': '0',
+71 verbose headers   'x-timer': 'S1483816644.377494,VS0,VE760',
+71 verbose headers   vary: 'Accept-Encoding' }
+72 silly get cb [ 404,
+72 silly get   { 'content-type': 'application/json',
+72 silly get     'cache-control': 'max-age=0',
+72 silly get     'content-length': '2',
+72 silly get     'accept-ranges': 'bytes',
+72 silly get     date: 'Sat, 07 Jan 2017 19:17:25 GMT',
+72 silly get     via: '1.1 varnish',
+72 silly get     age: '0',
+72 silly get     connection: 'keep-alive',
+72 silly get     'x-served-by': 'cache-cdg8733-CDG',
+72 silly get     'x-cache': 'MISS',
+72 silly get     'x-cache-hits': '0',
+72 silly get     'x-timer': 'S1483816644.377494,VS0,VE760',
+72 silly get     vary: 'Accept-Encoding' } ]
+73 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/angular-marquee
+73 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+73 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+73 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+73 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+73 verbose stack     at emitTwo (events.js:87:13)
+73 verbose stack     at Request.emit (events.js:172:7)
+73 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+73 verbose stack     at emitOne (events.js:82:20)
+73 verbose stack     at Request.emit (events.js:169:7)
+73 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+74 verbose statusCode 404
+75 verbose pkgid angular-marquee
+76 verbose cwd C:\Users\Ashar27\Desktop\Ashar-Freelancer\PdfScroll\server
+77 error Windows_NT 6.2.9200
+78 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular-marquee"
+79 error node v4.4.3
+80 error npm  v2.15.1
+81 error code E404
+82 error 404 Registry returned 404 for GET on https://registry.npmjs.org/angular-marquee
+82 error 404
+82 error 404 'angular-marquee' is not in the npm registry.
+82 error 404 You should bug the author to publish it (or use the name yourself!)
+82 error 404 It was specified as a dependency of 'textScrollApp'
+82 error 404
+82 error 404 Note that you can also install from a
+82 error 404 tarball, folder, http url, or git url.
+83 verbose exit [ 1, true ]
